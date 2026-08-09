@@ -159,6 +159,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .main-nav a:hover{background:var(--cream)}
 .main-nav a.active{color:var(--terra)}
 .header-cta{display:flex;align-items:center;gap:14px}
+.header-call{display:none}
 .header-phone{display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.1;flex:none}
 .header-phone .hp-label{font-size:.66rem;font-weight:400;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);white-space:nowrap}
 .header-phone .hp-num{font-family:"Cormorant SC",serif;font-weight:700;font-size:1.24rem;color:var(--green-deep);white-space:nowrap;letter-spacing:.01em}
@@ -172,10 +173,18 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .nav-toggle svg{width:24px;height:24px;color:var(--green-deep)}
 
 @media(max-width:940px){.main-nav,.header-phone{display:none}.nav-toggle{display:inline-flex}}
+@media(max-width:600px){
+  .header-cta{margin-left:auto}
+  .header-quote{display:none}
+  .header-cta .header-call{display:inline-flex;padding:.62em .74em;gap:0}
+  .header-call svg{width:20px;height:20px}
+  .brand-tag{display:none}
+}
 @media(max-width:480px){
   .header-inner{gap:10px}
   .header-cta{gap:10px}
   .header-cta .btn{font-size:.84rem;padding:.78em 1.05em}
+  .header-cta .header-call{padding:.62em .74em}
   .brand{gap:9px}
   .brand-mark{width:38px;height:38px}
   .brand-mark svg{width:22px;height:22px}
