@@ -404,18 +404,6 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .footer-bottom a{color:#fff}
 .footer-bottom a:hover{color:var(--terra-soft)}
 
-/* ---------- Fixed mobile call bar ---------- */
-.callbar{
-  position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
-  background:var(--green-deep);border-top:1px solid rgba(255,255,255,.12);
-  padding:10px 14px;gap:10px;box-shadow:0 -10px 30px -14px rgba(0,0,0,.5);
-}
-.callbar .cb-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.85em 1em;border-radius:12px;font-weight:400;font-size:1rem;letter-spacing:.03em}
-.callbar .cb-call{background:var(--terra);color:#fff}
-.callbar .cb-quote{background:#fff;color:var(--green-deep)}
-.callbar svg{width:1.15em;height:1.15em}
-@media(max-width:720px){.callbar{display:flex}body{padding-bottom:70px}.site-footer{padding-bottom:84px}}
-
 /* ---------- Reveal animations ---------- */
 .reveal{
   opacity:0;transform:translateY(26px) scale(.975);filter:blur(7px);
